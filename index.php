@@ -1,4 +1,7 @@
 <?php
+if (!is_dir('post')) {
+mkdir('post');    
+}
 $array = scandir('post');
 $files = [];
 foreach ($array as $file) {
